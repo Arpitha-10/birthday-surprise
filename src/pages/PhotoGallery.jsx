@@ -102,7 +102,7 @@ function PhotoGallery({ onComplete }) {
       <div className="gallery-footer">
         <div className="final-question">
             <h3>Do you want more…?</h3>
-            {yesCount >= 5 && <p className="defeat-message"> Desperate much? Click No now, babe </p>}
+            {yesCount >= 3 && <p className="defeat-message"> Desperate much? Click No now, babe </p>}
             <div className="button-container">
               <button
                 className={`yes-button ${yesCount >= 5 ? 'defeated' : ''}`}
