@@ -96,7 +96,7 @@ function CakePage({ onComplete }) {
   // Timer for the initial "Let's make a cake..." message
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (topMessage === "Let's make a cake...🎂😍") {
+      if (topMessage === "Let's make a cake...") {
         setTopMessage('');
       }
     }, 3000); // Disappears after 3 seconds
@@ -112,7 +112,7 @@ function CakePage({ onComplete }) {
       return () => clearTimeout(timer);
     } else if (animationStep === 5) {
       const messageTimer = setTimeout(() => {
-        setTopMessage("Blow out the candles...🥳");
+        setTopMessage("Blow out the candles...");
         const fadeOutTimer = setTimeout(() => {
           setTopMessage('');
         }, 3000); // Disappears after 3 seconds
@@ -130,7 +130,7 @@ function CakePage({ onComplete }) {
 
     const allCandlesOut = newCandlesState.every(lit => !lit);
     if (allCandlesOut) {
-      setTopMessage('Make a biggg wish...(hint:BD,BM😉)');
+      setTopMessage('Make a biggg wish...(hint:BD,BM)');
       setTimeout(() => {
         
         setTopMessage('Happy Birthday, Cinderella!👑');
