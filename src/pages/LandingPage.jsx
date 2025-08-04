@@ -93,7 +93,7 @@ function LandingPage({ onComplete }) {
     if (step === messages.length - 1) {
       return (
         <>
-          {noCount >= 3 && <p className="defeat-message">Okay, okay, you win... but you still have to click yes!</p>}
+          {noCount >= 3 && <p className="defeat-message">Okay, okay, you win... but you still have to click yes! 😆 </p>}
           <h2 key={step}>{messages[step]}</h2>
           <div className="button-container">
             <button className="yes-button" onClick={onComplete}>Yes</button>
